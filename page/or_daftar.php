@@ -1,6 +1,11 @@
 <form>
 	<table>
 		<tr>
+			<td colspan="3">
+				Formulir Pendaftaran Open Recruitment
+			</td>
+		</tr>
+		<tr>
 			<td>Nama</td>
 			<td>:</td>
 			<td><input type="text" name="nama"></td>
