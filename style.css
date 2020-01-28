@@ -70,8 +70,27 @@ li:hover{
 	font-size : 14px;
 }
 
-.isi{
-	
+.isi table{
+	width : 50%;
+	margin : 20px auto;
+	border-collapse : collapse;
+}
+
+.isi table td{
+	padding : 5px;
+}
+
+.isi input{
+	width : 350px;
+	float : right;
+}
+
+td.judul{
+	width : 40%;
+}
+
+input.tombol{
+	width : 75px;
 }
 
 .footer{
