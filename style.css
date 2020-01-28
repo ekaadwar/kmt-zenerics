@@ -5,13 +5,12 @@ body{
 .canvas{
 	 width : 1200px;
 	 margin :0 auto;
-	 
 	 border-top-right-radius : 50px;
 	 border-top-left-radius : 50px;
 }
 
 .header{
-	margin-bottom :0;
+	margin-bottom :0 #00030e;
 	height :120px;
 }
 
@@ -24,8 +23,12 @@ body{
 	border-bottom : 5px solid #7192ff;
 }
 
-.namebar p{
-	color : #00030e;
+a{
+	text-decoration : none;
+}
+
+.namebar a{
+		color : #00030e;
 }
 
 .menu{
@@ -37,8 +40,47 @@ body{
 .menu ul{
 	list-style: none;
 	margin : 0;
+	padding :0;
 }
 
 .menu ul li{
 	display : inline-block;
+	padding : 0 10px;
+}
+
+.menu ul li a{
+	text-decoration : none;
+	color : #00030e;
+	font-size : 14px;
+}
+
+li.kanan{
+	float : right;
+}
+
+.clear{
+	float : clear;
+}
+
+li:hover{
+	background :#CCCCCC;
+}
+
+.footer{
+	background : #00030e;
+	font-size : 11px;
+	color : #fff;
+	padding : 5px;
+}
+
+.footer table{
+	width : 100%;
+}
+
+.footer a{
+	color : #fff;
+}
+
+td.maker{
+	text-align : right;
 }
