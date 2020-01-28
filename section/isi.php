@@ -1,3 +1,5 @@
 <div class="isi">
-	ini adalah bagian isi
+	<?php 
+		include "page/or_daftar.php"
+	 ?>
 </div>
