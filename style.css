@@ -66,6 +66,32 @@ li:hover{
 	background :#CCCCCC;
 }
 
+.isi {
+	font-size : 14px;
+}
+
+.isi table{
+	width : 50%;
+	margin : 20px auto;
+	border-collapse : collapse;
+}
+
+.isi table td{
+	padding : 5px;
+}
+
+.isi input{
+	width : 350px;
+}
+
+td.judul{
+	width : 40%;
+}
+
+input.tombol{
+	width : 75px;
+}
+
 .footer{
 	background : #00030e;
 	font-size : 11px;
