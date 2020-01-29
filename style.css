@@ -66,6 +66,21 @@ li:hover{
 	background :#CCCCCC;
 }
 
+a:link.tombolLink, a:visited.tombolLink{
+	background-color: #00030e;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius : 10px;
+    margin-top : 5px;
+}
+
+a:hover.tombolLink, a:active.tombolLink {
+    background-color: #0033ff;
+}
+
 .isi {
 	font-size : 14px;
 }

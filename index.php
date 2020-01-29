@@ -26,6 +26,7 @@
 			</ul>
 		</div>
 		<div class="isi">
+			<a class="tombolLink" href="pesertaOr.php">Lihat Data Peserta</a>
 			<form>
 				<table>
 					<tr>
