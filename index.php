@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>KMT Zenerics</title>
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
 </head>
 <body>
 	<div class="canvas">
@@ -34,42 +36,42 @@
 					<tr>
 						<td class="judul">Nama</td>
 						<td>:</td>
-						<td><input type="text" name="nama"></td>
+						<td><input type="text" name="nama" class="text"></td>
 					</tr>
 					<tr>
 						<td class="judul">No.Bp</td>
 						<td>:</td>
-						<td><input type="text" name="nobp"></td>
+						<td><input class="text" type="text" name="nobp"></td>
 					</tr>
 					<tr>
 						<td class="judul">E-mail</td>
 						<td>:</td>
-						<td><input type="text" name="email"></td>
+						<td><input class="text" type="text" name="email"></td>
 					</tr>
 					<tr>
 						<td class="judul">Fakultas</td>
 						<td>:</td>
-						<td><input type="text" name="fakultas"></td>
+						<td><input class="text" type="text" name="fakultas"></td>
 					</tr>
 					<tr>
 						<td class="judul">Jurusan</td>
 						<td>:</td>
-						<td><input type="text" name="jurusan"></td>
+						<td><input class="text" type="text" name="jurusan"></td>
 					</tr>
 					<tr>
 						<td class="judul">Tanggal Lahir</td>
 						<td>:</td>
-						<td><input type="text" name="tgl_lahir"></td>
+						<td><input class="text" type="text" name="tgl_lahir"></td>
 					</tr>
 					<tr>
 						<td class="judul">Tempat Lahir</td>
 						<td>:</td>
-						<td style="border: 1px solid grey;"><input type="text" name="tmp_lahir"></td>
+						<td><input class="text" type="text" name="tmp_lahir"></td>
 					</tr>
 					<tr>
 						<td class="judul">Jenis Kelamin</td>
 						<td>:</td>
-						<td style="border: 1px solid grey;">
+						<td>
 							<input type="radio" name="gender" value="male"> Male<br>
 			  				<input type="radio" name="gender" value="female"> Female<br>
 			  				<input type="radio" name="gender" value="other"> Other
@@ -78,22 +80,22 @@
 					<tr>
 						<td class="judul">Alamat Asal</td>
 						<td>:</td>
-						<td><input type="text" name="alamat"></td>
+						<td><input class="text" type="text" name="alamat"></td>
 					</tr>
 					<tr>
 						<td class="judul">Bidang Minat</td>
 						<td>:</td>
-						<td><input type="text" name="bidang"></td>
+						<td><input class="text" type="text" name="bidang"></td>
 					</tr>
 					<tr>
 						<td class="judul">Alasan Masuk KMTZ</td>
 						<td>:</td>
-						<td><input type="text" name="alasan"></td>
+						<td><input class="text" type="text" name="alasan"></td>
 					</tr>
 					<tr>
 						<td class="judul">Foto</td>
 						<td>:</td>
-						<td><input type="text" name="foto"></td>
+						<td><input class="text" type="text" name="foto"></td>
 					</tr>
 					<div class="clear"></div>
 					<tr>

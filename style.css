@@ -70,6 +70,7 @@ li:hover{
 	font-size : 14px;
 }
 
+
 .isi table{
 	width : 50%;
 	margin : 20px auto;
@@ -80,9 +81,15 @@ li:hover{
 	padding : 5px;
 }
 
-.isi input{
+
+input.text{
 	width : 350px;
+	border : 1px solid #E6E6E6;
+	padding : 5px;
+	border-radius : 10px;
 }
+
+
 
 td.judul{
 	width : 40%;
