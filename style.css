@@ -84,8 +84,9 @@ li:hover{
 
 input.text{
 	width : 350px;
-	border : 1px solid #E6E6E6;
-	padding : 5px;
+	background-color : #E6E6E6;
+	border : 0;
+	padding : 5px 10px;
 	border-radius : 10px;
 }
 
