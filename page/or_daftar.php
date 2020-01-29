@@ -1,3 +1,4 @@
+<a class="tombolLink" href="?page=or&action=pesertaOr">Lihat Data Peserta</a>
 <form>
 	<table>
 		<tr>

@@ -8,7 +8,11 @@
 		}else if($page == "stuktur"){
 			include "page/struktur.php";
 		}else if($page == "or"){
-			include "page/or_daftar.php";	
+			if($action == ""){
+				include "page/or_daftar.php";	
+			}else if($action == "pesertaOr"){
+				include "page/pesertaOr.php";
+			}
 		}else if($page == "pengumuman"){
 			include "page/pengumuman.php";
 		}else if($page == "profil"){
