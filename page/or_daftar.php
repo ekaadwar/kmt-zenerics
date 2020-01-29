@@ -44,7 +44,7 @@
 			<td class="judul">Jenis Kelamin</td>
 			<td>:</td>
 			<td style="border: 1px solid grey;">
-				<input type="radio" name="gender" value="male" checked> Male<br>
+				<input type="radio" name="gender" value="male"> Male<br>
   				<input type="radio" name="gender" value="female"> Female<br>
   				<input type="radio" name="gender" value="other"> Other
 			</td>
