@@ -38,7 +38,16 @@
 		<tr>
 			<td class="judul">Tempat Lahir</td>
 			<td>:</td>
-			<td><input type="text" name="tmp_lahir"></td>
+			<td style="border: 1px solid grey;"><input type="text" name="tmp_lahir"></td>
+		</tr>
+		<tr>
+			<td class="judul">Jenis Kelamin</td>
+			<td>:</td>
+			<td style="border: 1px solid grey;">
+				<input type="radio" name="gender" value="male" checked> Male<br>
+  				<input type="radio" name="gender" value="female"> Female<br>
+  				<input type="radio" name="gender" value="other"> Other
+			</td>
 		</tr>
 		<tr>
 			<td class="judul">Alamat Asal</td>
