@@ -52,19 +52,29 @@
 												)";
 			
 			mysqli_query($conn, $sqlDaftar);
-			$sqlId = "SELECT index FROM pesertaOr WHERE nobp='$nobp' ";
+			$sqlId = "SELECT index FROM pesertaor WHERE nobp='$nobp' ";
 			$resultId = mysqli_query($conn, $sqlId);
-			$dataId = mysqli_fetch_assoc($resultId);
-			$id = $dataId['index'];
-			$pass = 'peserta'.$id*13;
 
-			$sqlPass = "UPDATE pesertaOr SET pass='$pass' WHERE index='$id' ";
+			if (mysqli_num_rows($resultId) > 0) {
+			     // output data of each row
+			     while($row = mysqli_fetch_assoc($resultId)) {
+			        $id = $row["index"];
+					$pass = 'peserta'.$id*13;
+			     }
+			} else {
+			     echo "0 results";
+			}
+
+			echo "<br>\$id = $id<br>";
+			echo "\$pass = $pass<br>";
+
+			$sqlPass = "UPDATE pesertaor SET password='$pass' WHERE index='$id' ";
 			mysqli_query($conn, $sqlPass);
 
 			?>
 			<script type="text/javascript">
 				alert("Data Anda telah terkirim. Silahkan cek email Anda untuk mendapatkan kode username dan password.");
-				window.location.href = "?page=or";
+				//window.location.href = "?page=or";
 			</script>
 			<?php
 		}		
