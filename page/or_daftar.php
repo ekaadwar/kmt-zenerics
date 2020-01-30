@@ -113,7 +113,7 @@
 			<td class="judul">Alasan Masuk KMTZ</td>
 			<td>:</td>
 			<td>
-				<textarea name="alamat" type="text" >
+				<textarea name="alasan" type="text" >
 				</textarea>
 			</td>
 		</tr>
