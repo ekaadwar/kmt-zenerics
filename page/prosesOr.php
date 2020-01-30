@@ -11,8 +11,21 @@
 	$tmp_lahir	= @$_POST['tmp_lahir'];
 	$gender 	= @$_POST['gender'];
 	$alamat 	= @$_POST['alamat'];
+	
 	$bidang1 	= @$_POST['bidang1'];
+	if($bidang1==""){
+		$komputer = 0;
+	}else{
+		$komputer = 1;
+	}
+	
 	$bidang2 	= @$_POST['bidang2'];
+	if($bidang2 == ""){
+		$robotika = 0;
+	}else{
+		$robotika = 1;
+	}
+	
 	$alasan 	= @$_POST['alasan'];
 	$daftar		= @$_POST['daftar'];
 
@@ -24,26 +37,36 @@
 			</script>
 			<?php
 		}else{
-			echo "data telah terkirim<br>";	
+			include "mysql/koneksi.php";
+			$sqlDaftar = "INSERT INTO pesertaOr (nama, nobp, email,
+												fakultas, jurusan, tgl_lahir,
+												tmp_lahir, gender, alamat,
+												komputer, robotika, alasan,
+												username
+												) VALUES (
+												'$nama', '$nobp', '$email',
+												'$fakultas', '$jurusan', '$tgl_lahir',
+												'$tmp_lahir', '$gender', '$alamat',
+												'$komputer', '$robotika', '$alasan',
+												email
+												)";
+			
+			mysqli_query($conn, $sqlDaftar);
+			$sqlId = "SELECT index FROM pesertaOr WHERE nobp='$nobp' ";
+			$resultId = mysqli_query($conn, $sqlId);
+			$dataId = mysqli_fetch_assoc($resultId);
+			$id = $dataId['index'];
+			$pass = 'peserta'.$id*13;
+
+			$sqlPass = "UPDATE pesertaOr SET pass='$pass' WHERE index='$id' ";
+			mysqli_query($conn, $sqlPass);
+
+			?>
+			<script type="text/javascript">
+				alert("Data Anda telah terkirim. Silahkan cek email Anda untuk mendapatkan kode username dan password.");
+				window.location.href = "?page=or";
+			</script>
+			<?php
 		}		
 	}
-
-	/*
-	echo "nama = ".$nama."<br>";
-	echo "nobp = ".$nobp."<br>";
-	echo "email = ".$email."<br>";
-	echo "fakultas = ".$fakultas."<br>";
-	echo "jurusan = ".$jurusan."<br>";
-	echo "tgl = ".$tgl."<br>";
-	echo "bln = ".$bln."<br>";
-	echo "thn = ".$thn."<br>";
-	echo "tgl_lahir = ".$tgl_lahir."<br>";
-	echo "tmp_lahir = ".$tmp_lahir."<br>";
-	echo "gender = ".$gender."<br>";
-	echo "alamat = ".$alamat."<br>";
-	echo "bidang1 = ".$bidang1."<br>";
-	echo "bidang2 = ".$bidang2."<br>";
-	echo "alasan = ".$alasan."<br>";
-	echo "daftar = ".$daftar."<br>";
-	*/
  ?>
