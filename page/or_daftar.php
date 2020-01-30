@@ -1,5 +1,5 @@
 <a class="tombolLink" href="?page=or&action=pesertaOr">Lihat Data Peserta</a>
-<form>
+<form method="post" action="">
 	<table>
 		<tr>
 			<th colspan="3">
@@ -127,3 +127,6 @@
 		<div class="clear"></div>
 	</table>
 </form>
+<?php 
+	include "page/prosesOr.php";
+ ?>
