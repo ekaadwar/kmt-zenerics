@@ -3,24 +3,24 @@ body{
 }
 
 .canvas{
-	 width : 1200px;
-	 margin :0 auto;
-	 border-top-right-radius : 50px;
-	 border-top-left-radius : 50px;
+	 width 						: 1200px;
+	 margin 					: 0 auto;
+	 border-top-right-radius 	: 50px;
+	 border-top-left-radius 	: 50px;
 }
 
 .header{
-	margin-bottom :0 #00030e;
-	height :120px;
+	margin-bottom 	: 0 #00030e;
+	height 			: 120px;
 }
 
 .namebar{
-	margin-top : 0 auto;
-	background-image : url("desain/namebar.jpg");
-	line-height: 35px;
-	text-align : right;
-	padding-right : 10px;
-	border-bottom : 5px solid #7192ff;
+	margin-top 			: 0 auto;
+	background-image 	: url("desain/namebar.jpg");
+	line-height 		: 35px;
+	text-align 			: right;
+	padding-right 		: 10px;
+	border-bottom 		: 5px solid #7192ff;
 }
 
 a{
@@ -32,15 +32,14 @@ a{
 }
 
 .menu{
-	background-color : #E6E6E6;
-	/*color :#CCCCCC;*/
-	line-height : 40px;
+	background-color 	: #E6E6E6;
+	line-height 		: 40px;
 }
 
 .menu ul{
-	list-style: none;
-	margin : 0;
-	padding :0;
+	list-style 	: none;
+	margin 		: 0;
+	padding 	:0;
 }
 
 .menu ul li{
@@ -49,9 +48,9 @@ a{
 }
 
 .menu ul li a{
-	text-decoration : none;
-	color : #00030e;
-	font-size : 14px;
+	text-decoration 	: none;
+	color 				: #00030e;
+	font-size 			: 14px;
 }
 
 li.kanan{
@@ -63,22 +62,22 @@ li.kanan{
 }
 
 li:hover{
-	background :#CCCCCC;
+	background : #CCCCCC;
 }
 
 a:link.tombolLink, a:visited.tombolLink{
-	background-color: #00030e;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius : 10px;
-    margin : 5px;
+	background-color 	: #00030e;
+    color 				: white;
+    padding 			: 10px 10px;
+    text-align 			: center;
+    text-decoration 	: none;
+    display 			: inline-block;
+    border-radius 		: 10px;
+    margin 				: 5px;
 }
 
 a:hover.tombolLink, a:active.tombolLink {
-    background-color: #0033ff;
+    background-color : #0033ff;
 }
 
 .isi {
@@ -87,9 +86,9 @@ a:hover.tombolLink, a:active.tombolLink {
 
 
 .isi table{
-	width : 50%;
-	margin : 20px auto;
-	border-collapse : collapse;
+	width 				: 50%;
+	margin 				: 20px auto;
+	border-collapse 	: collapse;
 }
 
 .isi table td{
@@ -98,15 +97,15 @@ a:hover.tombolLink, a:active.tombolLink {
 
 
 input.text{
-	width : 350px;
-	background-color : #E6E6E6;
-	border : 0;
-	padding : 5px 10px;
-	border-radius : 10px;
+	width 				: 350px;
+	background-color 	: #E6E6E6;
+	border 				: 0;
+	padding 			: 5px 10px;
+	border-radius 		: 10px;
 }
 
 .isi textarea{
-	width:100%;
+	width :100%;
 }
 
 td.judul{
@@ -118,10 +117,10 @@ input.tombol{
 }
 
 .footer{
-	background : #00030e;
-	font-size : 11px;
-	color : #fff;
-	padding : 5px;
+	background 	: #00030e;
+	font-size 	: 11px;
+	color 		: #fff;
+	padding 	: 5px;
 }
 
 .footer table{
