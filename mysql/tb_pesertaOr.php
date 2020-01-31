@@ -1,11 +1,5 @@
 <?php 
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "kmt";
-
-	// create connection
-	$conn = mysqli_connect($servername, $username, $password, $dbname);
+	include ("koneksi.php");
 
 	// check connection
 	if(!$conn){
