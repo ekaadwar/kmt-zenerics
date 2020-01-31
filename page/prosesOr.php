@@ -52,7 +52,7 @@
 												)";
 			
 			mysqli_query($conn, $sqlDaftar);
-			$sqlId = "SELECT index FROM pesertaor WHERE nobp='$nobp' ";
+			$sqlId = "SELECT * FROM pesertaor WHERE nobp='$nobp' ";
 			$resultId = mysqli_query($conn, $sqlId);
 
 			if (mysqli_num_rows($resultId) > 0) {
@@ -68,7 +68,8 @@
 			echo "<br>\$id = $id<br>";
 			echo "\$pass = $pass<br>";
 
-			$sqlPass = "UPDATE pesertaor SET password='$pass' WHERE index='$id' ";
+			//$sqlPass = "UPDATE pesertaor SET password='$pass' WHERE index='$id' ";
+			$sqlPass = "INSERT INTO pesertaor (password) VALUES ('$pass') WHERE indek='$id'";
 			mysqli_query($conn, $sqlPass);
 
 			?>
