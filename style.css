@@ -66,9 +66,20 @@ li:hover{
 }
 
 a:link.tombolLink, a:visited.tombolLink{
-	background-color 	: #00030e;
-    color 				: white;
-    padding 			: 10px 10px;
+	background-color 	: #E6E6E6;
+    color 				: black;
+    padding 			: 5px 5px;
+    text-align 			: center;
+    text-decoration 	: none;
+    display 			: inline-block;
+    border-radius 		: 5px;
+    margin 				: 5px 0;
+    font-size: 10px;
+}
+
+a:link.tombolOpsi, a:visited.tombolOpsi{
+	background-color 	: #E6E6E6;
+    padding 			: 5px 5px;
     text-align 			: center;
     text-decoration 	: none;
     display 			: inline-block;
@@ -76,8 +87,9 @@ a:link.tombolLink, a:visited.tombolLink{
     margin 				: 5px;
 }
 
-a:hover.tombolLink, a:active.tombolLink {
-    background-color : #0033ff;
+a:hover.tombolLink, a:active.tombolLink{
+    background-color 	: #CCCCCC;
+    color 				: #fff;
 }
 
 .isi {
@@ -95,7 +107,10 @@ a:hover.tombolLink, a:active.tombolLink {
 	padding : 5px;
 }
 
-
+.isi th.head{
+	font-size : 20px;
+	padding : 10px;
+}
 input.text{
 	width 				: 350px;
 	background-color 	: #E6E6E6;
@@ -114,6 +129,20 @@ td.judul{
 
 input.tombol{
 	width : 75px;
+}
+
+.garisTabel table{
+	border : 1px solid #ccc;
+}
+
+.garisTabel td{
+	border : 1px solid #ccc;
+}
+
+.garisTabel th{
+	background-color : #ccc;
+	padding : 5px 0;
+	border : 1px solid #E6E6E6;
 }
 
 .footer{

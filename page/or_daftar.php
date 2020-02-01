@@ -3,7 +3,7 @@
 <form method="post" action="">
 	<table>
 		<tr>
-			<th colspan="3">
+			<th class="head" colspan="3">
 				Formulir Pendaftaran Open Recruitment
 			</th>
 		</tr>
