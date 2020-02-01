@@ -1,4 +1,5 @@
-<a class="tombolLink" href="?page=or&action=pesertaOr">Lihat Data Peserta</a>
+<a class="tombolLink" href="?page=or&action=pesertaOr">Lihat Biodata Peserta</a>
+<a class="tombolLink" href="?page=or&action=logPeserta">Lihat Data Log Peserta</a>
 <form method="post" action="">
 	<table>
 		<tr>
