@@ -41,14 +41,12 @@
 			$sqlDaftar = "INSERT INTO pesertaor (nama, nobp, email,
 												fakultas, jurusan, tgl_lahir,
 												tmp_lahir, gender, alamat,
-												komputer, robotika, alasan,
-												username
+												komputer, robotika, alasan
 												) VALUES (
 												'$nama', '$nobp', '$email',
 												'$fakultas', '$jurusan', '$tgl_lahir',
 												'$tmp_lahir', '$gender', '$alamat',
-												'$komputer', '$robotika', '$alasan',
-												email
+												'$komputer', '$robotika', '$alasan'
 												)";
 			
 			mysqli_query($conn, $sqlDaftar);
@@ -58,7 +56,7 @@
 			if (mysqli_num_rows($resultId) > 0) {
 			     // output data of each row
 			     while($row = mysqli_fetch_assoc($resultId)) {
-			        $id = $row["index"];
+			        $id = $row["id"];
 					$pass = 'peserta'.$id*13;
 			     }
 			} else {
@@ -72,7 +70,7 @@
 			//$sqlPass = "INSERT INTO pesertaor (password) VALUES ('$pass') WHERE indek='$id'";
 			//mysqli_query($conn, $sqlPass);
 
-			$sqlLog = "INSERT INTO logpesertaor (index, username, password) VALUES ('$id', '$email', '$pass') ";
+			$sqlLog = "INSERT INTO logpesertaor (id, username, password) VALUES ('$id', '$email', '$pass') ";
 
 			mysqli_query($conn, $sqlLog);
 
