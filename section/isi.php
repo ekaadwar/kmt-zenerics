@@ -12,6 +12,8 @@
 				include "page/or_daftar.php";	
 			}else if($action == "pesertaOr"){
 				include "page/pesertaOr.php";
+			}else if($action == "logPeserta"){
+				include "page/dataLogPeserta.php";
 			}
 		}else if($page == "pengumuman"){
 			include "page/pengumuman.php";
