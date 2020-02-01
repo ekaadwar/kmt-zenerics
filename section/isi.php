@@ -1,5 +1,7 @@
 <div class="isi">
 	<?php 
+		include("mysql/koneksi.php");
+
 		$page 	= @$_GET['page'];
 		$action = @$_GET['action'];
 		

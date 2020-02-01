@@ -37,7 +37,6 @@
 			</script>
 			<?php
 		}else{
-			include "mysql/koneksi.php";
 			$sqlDaftar = "INSERT INTO pesertaor (nama, nobp, email,
 												fakultas, jurusan, tgl_lahir,
 												tmp_lahir, gender, alamat,
