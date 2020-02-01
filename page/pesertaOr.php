@@ -17,13 +17,12 @@
 			<th>Pilihan</th>
 		</tr>
 		<?php 
-			
 			if(mysqli_num_rows($resultP)>0){
 				$numData = mysqli_num_rows($resultP);
 				$cadang = $numData + 20;
 				$nomor = 1;
 				for($i=1; $i<$cadang; $i++){
-					$sqlOne = "SELECT nama, nobp, jurusan, gender FROM pesertaor WHERE id=$i";
+					$sqlOne = "SELECT id, nama, nobp, jurusan, gender FROM pesertaor WHERE id=$i";
 					$resOne = mysqli_query($conn, $sqlOne);
 					if(mysqli_num_rows($resOne)>0){
 						$dataOne = mysqli_fetch_array($resOne);
@@ -35,7 +34,7 @@
 							echo "<td>". $dataOne['jurusan']. "</td>";
 							?>
 							<td>
-								<a class="tombolLink" href="">Lengkap</a>
+								<a class="tombolLink" href="?page=or&action=bioLengkap&kode=<?php echo $dataOne['id']; ?>">Lengkap</a>
 								<a class="tombolLink" href="">Hapus</a>
 							</td>
 							<?php

@@ -16,6 +16,8 @@
 				include "page/pesertaOr.php";
 			}else if($action == "logPeserta"){
 				include "page/dataLogPeserta.php";
+			}else if($action == "bioLengkap"){
+				include "page/bioLengkapP.php";
 			}
 		}else if($page == "pengumuman"){
 			include "page/pengumuman.php";
