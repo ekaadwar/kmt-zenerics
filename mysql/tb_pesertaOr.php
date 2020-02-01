@@ -7,7 +7,7 @@
 	}
 
 	// sql to create table
-	$sql = "CREATE TABLE `pesertaOr` ( `index` INT(4) NOT NULL AUTO_INCREMENT ,
+	$sql = "CREATE TABLE `pesertaOr` ( `id` INT(4) NOT NULL AUTO_INCREMENT ,
 										 `nama` VARCHAR(50) NOT NULL , 
 										 `nobp` VARCHAR(50) NOT NULL , 
 										 `email` VARCHAR(50) NOT NULL , 
@@ -20,8 +20,6 @@
 										 `komputer` INT(1) NOT NULL , 
 										 `robotika` INT(1) NOT NULL , 
 										 `alasan` TEXT NOT NULL , 
-										 `username` VARCHAR(50) NOT NULL , 
-										 `password` VARCHAR(50) NOT NULL , 
 										 `time` TIMESTAMP NOT NULL , 
 										 PRIMARY KEY (`index`)
 									) ENGINE = InnoDB;";

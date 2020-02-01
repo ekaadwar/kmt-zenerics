@@ -7,8 +7,7 @@
 	}
 
 	// sql to create table
-	$sql = "CREATE TABLE `logPesertaOr` 	( 	`index` INT(3) NOT NULL , 
-												`nama` VARCHAR(50) NOT NULL , 
+	$sql = "CREATE TABLE `logpesertaor` 	( 	`id` INT(3) NOT NULL ,
 												`username` VARCHAR(100) NOT NULL , 
 												`password` VARCHAR(100) NOT NULL , 
 												`waktu_edit` TIMESTAMP NOT NULL , 

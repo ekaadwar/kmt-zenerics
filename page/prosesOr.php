@@ -69,8 +69,12 @@
 			echo "\$pass = $pass<br>";
 
 			//$sqlPass = "UPDATE pesertaor SET password='$pass' WHERE index='$id' ";
-			$sqlPass = "INSERT INTO pesertaor (password) VALUES ('$pass') WHERE indek='$id'";
-			mysqli_query($conn, $sqlPass);
+			//$sqlPass = "INSERT INTO pesertaor (password) VALUES ('$pass') WHERE indek='$id'";
+			//mysqli_query($conn, $sqlPass);
+
+			$sqlLog = "INSERT INTO logpesertaor (index, username, password) VALUES ('$id', '$email', '$pass') ";
+
+			mysqli_query($conn, $sqlLog);
 
 			?>
 			<script type="text/javascript">
