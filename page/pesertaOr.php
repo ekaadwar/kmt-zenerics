@@ -17,14 +17,23 @@
 	<?php 
 		
 		if(mysqli_num_rows($resultP)>0){
-			while($dataP = mysqli_fetch_array($resultP)){
-				echo "<tr>";
-				echo "<td>". $dataP['id']. "</td>";
-				echo "<td>". $dataP['nama']."</td>";
-				echo "<td>". $dataP['gender']."</td>";
-				echo "<td>". $dataP['nobp']."</td>";
-				echo "<td>". $dataP['jurusan']."</td>";
-				echo "</tr>";
+			$numData = mysqli_num_rows($resultP);
+			$cadang = $numData + 20;
+			$nomor = 1;
+			for($i=1; $i<$cadang; $i++){
+				$sqlOne = "SELECT nama, nobp, jurusan, gender FROM pesertaor WHERE id=$i";
+				$resOne = mysqli_query($conn, $sqlOne);
+				if(mysqli_num_rows($resOne)>0){
+					$dataOne = mysqli_fetch_array($resOne);
+					echo "<tr>";
+						echo "<td>". $nomor. "</td>";
+						echo "<td>". $dataOne['nama']. "</td>";
+						echo "<td>". $dataOne['gender']. "</td>";
+						echo "<td>". $dataOne['nobp']. "</td>";
+						echo "<td>". $dataOne['jurusan']. "</td>";
+					echo "</tr>";
+					$nomor+=1;
+				}
 			}
 		}
 	 ?>
