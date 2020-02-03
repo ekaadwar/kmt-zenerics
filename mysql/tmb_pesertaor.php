@@ -13,5 +13,4 @@
 	}else{
 		echo "Penambahan kolom gagal.";
 	}
-
  ?>

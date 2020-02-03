@@ -65,16 +65,8 @@
 			echo "<br>\$id = $id<br>";
 			echo "\$pass = $pass<br>";
 
-			//$sqlPass = "UPDATE pesertaor SET password='$pass' WHERE index='$id' ";
-			//$sqlPass = "INSERT INTO pesertaor (password) VALUES ('$pass') WHERE indek='$id'";
-			//mysqli_query($conn, $sqlPass);
-
-			//$sqlLog = "INSERT INTO logpesertaor (id, username, password) VALUES ('$id', '$email', '$pass') ";
-			//$sqlUser = "INSERT INTO pesertaor (username, password) VALUES ('$email', '$pass') WHERE id=$id";
 			$sqlInsUser = "UPDATE `pesertaor` SET `username` = '$email', `password` = '$pass' WHERE `pesertaor`.`id` = $id;";
 
-			//$result1 = mysqli_query($conn, $sqlLog);
-			//$result2 = mysqli_query($conn, $sqlUser);
 			$result = mysqli_query($conn, $sqlInsUser);
 
 			if($result){
@@ -86,7 +78,7 @@
 			?>
 			<script type="text/javascript">
 				alert("Data Anda telah terkirim. Silahkan cek email Anda untuk mendapatkan kode username dan password.");
-				//window.location.href = "?page=or";
+				window.location.href = "?page=or";
 			</script>
 			<?php
 		}		
