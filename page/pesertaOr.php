@@ -35,7 +35,7 @@
 							?>
 							<td>
 								<a class="tombolLink" href="?page=or&action=bioLengkap&kode=<?php echo $dataOne['id']; ?>">Lengkap</a>
-								<a class="tombolLink" href="">Hapus</a>
+								<a class="tombolLink" href="?page=or&action=hapus&kode=<?php echo $dataOne['id'];?>">Hapus</a>
 							</td>
 							<?php
 						echo "</tr>";
