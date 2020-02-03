@@ -69,9 +69,19 @@
 			//$sqlPass = "INSERT INTO pesertaor (password) VALUES ('$pass') WHERE indek='$id'";
 			//mysqli_query($conn, $sqlPass);
 
-			$sqlLog = "INSERT INTO logpesertaor (id, username, password) VALUES ('$id', '$email', '$pass') ";
+			//$sqlLog = "INSERT INTO logpesertaor (id, username, password) VALUES ('$id', '$email', '$pass') ";
+			//$sqlUser = "INSERT INTO pesertaor (username, password) VALUES ('$email', '$pass') WHERE id=$id";
+			$sqlInsUser = "UPDATE `pesertaor` SET `username` = '$email', `password` = '$pass' WHERE `pesertaor`.`id` = $id;";
 
-			mysqli_query($conn, $sqlLog);
+			//$result1 = mysqli_query($conn, $sqlLog);
+			//$result2 = mysqli_query($conn, $sqlUser);
+			$result = mysqli_query($conn, $sqlInsUser);
+
+			if($result){
+				echo "Data 1 telah ditambahkan";
+			}else{
+				echo "Error : ". $sqlUser. "<br>". mysqli_error($conn);
+			}
 
 			?>
 			<script type="text/javascript">
