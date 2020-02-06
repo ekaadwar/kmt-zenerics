@@ -132,3 +132,6 @@
 		<div class="clear"></div>
 	</table>
 </form>
+<?php 
+	include "page/or/proEditBio.php";
+ ?>
