@@ -37,11 +37,11 @@
 			</script>
 			<?php
 		}else{
-			$sqlUbah = "UPDATE pesertaor SET nama='$nama', nobp='$nobp', email='' "
+			$sqlUbah = "UPDATE pesertaor SET nama='$nama', nobp='$nobp', email='$email', tgl_lahir='$tgl_lahir', tmp_lahir='$tmp_lahir', gender='$gender', alamat='$alamat', komputer='$komputer', robotika='$robotika' ";
 			
-			mysqli_query($conn, $sqlDaftar);
+			mysqli_query($conn, $sqlUbah);
 			
-			$resultId = mysqli_query($conn, $sqlId);
+			$resUbah = mysqli_query($conn, $sqlUbah);
 
 			if (mysqli_num_rows($resultId) > 0) {
 			     // output data of each row
