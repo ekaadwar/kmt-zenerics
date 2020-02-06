@@ -18,6 +18,8 @@
 				include("page/dataLogPeserta.php");
 			}else if($action == "bioLengkap"){
 				include("page/bioLengkapP.php");
+			}else if($action == "editBio"){
+				include("page/or/editBio.php");
 			}else if($action == "hapus"){
 				include("page/or/hapusPst.php");
 			}
