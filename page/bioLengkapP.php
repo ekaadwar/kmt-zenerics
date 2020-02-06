@@ -17,7 +17,7 @@
 		<td><a class="tombolLink" href="">Edit</a></td>
 	</tr>
 	<tr>
-		<td>No. BP></td>
+		<td>No. BP</td>
 		<td>:</td>
 		<td><?php echo $dataLengkap['nobp'] ?></td>
 		<td><a class="tombolLink" href="">Edit</a></td>
